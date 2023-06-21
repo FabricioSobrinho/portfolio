@@ -1,8 +1,183 @@
-.main {
-    background-color: aquamarine;
-    height: 100vh;
-    width: 100vw;
+/* Config geral navbar */
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #3c526a;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 1;
 }
-.imgDev {
-    width: 40%;
+
+/* Config Left navbar (texto) */
+nav .navText {
+  display: flex;
+  width: 50%;
+  padding: 1.5%;
+  padding-left: 3%;
+  transition: 0.5s;
+}
+nav .navText a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+nav .navText p {
+  position: relative;
+}
+
+nav .navText p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+  transition: width 0.5s ease;
+}
+nav .navText p:hover::after {
+  width: 100%;
+}
+/* Config right nav(nav menu) */
+nav .navMenu {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+nav .navMenu li {
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+}
+nav .navMenu li a {
+  text-decoration: none;
+  margin: 2px;
+  padding: 10px;
+  color: #ffffff;
+  transition: 0.5s;
+  border-radius: 1px;
+  font-size: 1.17em;
+}
+nav .navMenu a:hover {
+  background: #e7eef6;
+  color: #3c526a;
+  transition: 0.5s;
+  box-shadow: -5px 5px 1px black;
+  transform: scale(1.05);
+}
+/* Main div */
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #364156;
+  height: 100vh;
+  width: 100vw;
+}
+.main .glassCard {
+  display: flex;
+  position: relative;
+  top: 6%;
+  align-items: center;
+  justify-content: center;
+  height: 80%;
+  width: 70vw;
+  border-radius: 10px;
+  background: #02285031;
+}
+.main .glassCard .leftContent {
+  display: flex;
+  align-items: center;
+  width: 50%;
+}
+/* Definição da animação e da imagem */
+.main .glassCard .leftContent img {
+  width: 95%;
+  animation-name: imgAnimation;
+  animation-duration: 5s;
+  animation-timing-function: ease-out;
+  animation-iteration-count: infinite;
+}
+@keyframes imgAnimation {
+  0% {
+    transform: translateY(0);
+  }
+  15% {
+    transform: rotateY(-5px);
+  }
+  35% {
+    transform: rotateY(-10px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  65% {
+    transform: translateY(-10px);
+  }
+  85% {
+    transform: rotateY(-5px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+/* Defini;áo do conteúdo da direita, paragrafo e texto */
+.main .glassCard .rightContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
+}
+.main .glassCard .rightContent {
+  color: #ffffff;
+  padding: 5px;
+}
+.rightContent p {
+  position: relative;
+  text-align: center;
+  width: 90%;
+  padding: 10px;
+  margin: 10px;
+  font-size: 1.5em;
+}
+
+.rightContent p::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  transition: border-color 0.5s ease;
+}
+.rightContent p:hover::after {
+  border-color: white;
+}
+.rightContent .formButtonProject {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.formButtonProject button {
+    cursor: pointer;
+    color: #e7eef6;
+    padding: 3px;
+    background: #3C6896;
+    border: none;
+    outline: none;
+    height: 10vh;
+    width: 100%;
+}
+.formButtonProject button:hover {
+    background: #e7eef6;
+    color: #394A60;
+    box-shadow: -8px 8px 1px black;
+    transform: scale(1.1);
+    transition: .5s;
 }

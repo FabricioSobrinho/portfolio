@@ -1,0 +1,14 @@
+.aboutSection {
+    height: 100vh;
+    background: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainAboutCard{
+    background: red;
+    height: 70%;
+    width: 90%;
+}
+
