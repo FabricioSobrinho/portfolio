@@ -5,10 +5,9 @@ import { useState, useEffect } from "react"
 
 function HomePage() {
   const [text, setText] = useState("")
-
   useEffect(() => {
     const typeText = `Seeja bem vindo!
-    Meu nome é: Fabricio Sobrinho !`
+    Meu nome é: Fabrício Sobrinho !`
 
     const interval = 100
     let charIndex = 0
@@ -30,7 +29,7 @@ function HomePage() {
     <div className={styles.main} id="main">
       <div className={styles.glassCard}>
         <div className={styles.leftContent}>
-          <img src={DevImage} alt="This is an gif" className={styles.imgDev} />
+          <img src={DevImage} alt="JR dev" className={styles.imgDev} />
         </div>
         <div className={styles.rightContent}>
           <p>

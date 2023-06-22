@@ -24,6 +24,7 @@ nav {
     font-size: 1.6em;
     font-weight: 600;
   }
+
   nav .navText p {
     position: relative;
   }
@@ -69,4 +70,3 @@ nav {
     box-shadow: -5px 5px 1px black;
     transform: scale(1.05);
   }
-  

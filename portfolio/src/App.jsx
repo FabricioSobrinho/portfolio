@@ -6,7 +6,7 @@ import ScrollReveal from "scrollreveal"
 import NavBar from "./modules/layouts/NavBar"
 import HomePage from "./modules/layouts/HomePage"
 import AboutPage from "./modules/layouts/AboutPage"
-import SkilssPage from "./modules/layouts/SkilssPage"
+import SkillsPage from "./modules/layouts/SkillsPage"
 
 function App() {
   useEffect(() => {
@@ -32,7 +32,7 @@ function App() {
           <AboutPage id="page2" />
         </div>
         <div className="page">
-          <SkilssPage id="page3"/>
+          <SkillsPage id="page3"/>
         </div>
       </div>
     </div>

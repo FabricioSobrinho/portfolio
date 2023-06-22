@@ -1,19 +1,114 @@
 .skillMain {
     height: 100vh;
-    background: #FFFF;
+    background: #39699E;
 
     height: 100vh;
     scroll-snap-align: start;
     position: sticky;
     top: 0;
     left: 0;
-}
-.skillMain .skillCard {
-    height: 200px;
-    width: 100px;
-    background-color: black;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
-.skillCard:hover {
-    transform: translateX(180deg);
+.skillMain .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background: #15487e;
+    height: 100%;
+    width: 90%;
 }
+.text {
+    position: absolute;
+    margin-top: -20%;
+    color: #f0f8ff;
+    font-size: 2em;
+    text-align: center;
+}
+.skillMain .container .card{
+    position: relative;
+    top: 9%;
+    height: 37%;
+    width: 12%;
+}
+.card:hover .flip{
+    transform: rotateY(180deg)  scale(1.2);
+    z-index: 1;
+}
+.flip {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    transform-style: preserve-3d;
+    transition: .5s;
+}
+.frontCard, .backCard{ 
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px black;
+    backface-visibility: hidden;
+}
+
+.frontCard {
+    background: #629ddb;
+    color: #cd0000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6em;
+}
+
+.backCard{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    background: #1f4871;
+    transform: rotateY(180deg);
+    color: #f0f8ff;
+    font-weight: 300;
+}
+
+.html {
+    color: #ff4500;
+}
+.css {
+    color: #3f3fff;
+}
+.js {
+    color: #ffff00;
+    font-size: .9em;
+}
+.node{
+    color: #0d980d;
+    font-size: 1.3em;
+}
+.react {
+    color: #00e1ff;
+}
+.dbs {
+    color: #ffffff;
+}
+ .skillMain p::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-image: linear-gradient(to right, #ffffff, #ffffff);
+    transition: width 0.5s ease;
+  }
+.skillMain p:hover::after {
+text-align: center;
+    width: 100%;
+    border-radius: 20px;
+  }
