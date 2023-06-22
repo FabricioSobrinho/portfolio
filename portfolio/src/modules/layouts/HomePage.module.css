@@ -173,6 +173,7 @@ nav .navMenu a:hover {
     outline: none;
     height: 10vh;
     width: 100%;
+    transition: .5s;
 }
 .formButtonProject button:hover {
     background: #e7eef6;

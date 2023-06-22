@@ -1,14 +1,59 @@
 .aboutSection {
     height: 100vh;
-    background: blue;
+    background: #394A60;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .mainAboutCard{
-    background: red;
+    display: flex;
     height: 70%;
     width: 90%;
+    border: solid #E7EEF6 1px;
 }
 
+.mainAboutCard .leftAboutCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;  
+}
+.mainAboutCard .leftAboutCard h1 {
+    color: #E7EEF6;
+}
+.mainAboutCard .leftAboutCard img {
+    width: 60%;
+    animation-name: aboutImgAnimation;
+    animation-duration: 5s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: infinite;
+}
+.mainAboutCard .leftAboutCard img:hover {
+    transform: scale(1.1);
+}
+
+@keyframes aboutImgAnimation {
+    0% {
+        transform: translateY(0px);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+    100% {
+        transform: translateY(0px);
+    }
+}
+.mainAboutCard .rightAboutCard {
+    display: flex;
+    align-items: center;
+    padding: 2%;
+    width: 50%;
+}
+.mainAboutCard .rightAboutCard p {
+    color: #E7EEF6;
+    max-width: 80%;
+    font-size: 1.2em;
+    font-weight: 300;
+}

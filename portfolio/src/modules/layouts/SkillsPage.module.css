@@ -1,0 +1,13 @@
+.skillMain {
+    height: 100vh;
+    background: #FFFF;
+}
+.skillMain .skillCard {
+    height: 200px;
+    width: 100px;
+    background-color: black;
+}
+
+.skillCard:hover {
+    transform: translateX(180deg);
+}

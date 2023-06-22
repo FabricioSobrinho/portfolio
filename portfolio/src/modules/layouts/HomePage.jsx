@@ -33,7 +33,8 @@ function HomePage() {
         </div>
         <div className={styles.rightContent}>
           <p>
-            Bem vindo! Meu nome é: Fabricio Sobrinho <br/>
+            Bem vindo! <br/>
+            Meu nome é: Fabricio Sobrinho <br/>
             Sou acadêmico no curso de ADS. <br/>
             Venha conhecer meu portifólio!
           </p>
