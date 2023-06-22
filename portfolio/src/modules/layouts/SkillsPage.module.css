@@ -1,6 +1,12 @@
 .skillMain {
     height: 100vh;
     background: #FFFF;
+
+    height: 100vh;
+    scroll-snap-align: start;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 .skillMain .skillCard {
     height: 200px;

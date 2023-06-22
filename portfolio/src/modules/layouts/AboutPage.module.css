@@ -1,9 +1,18 @@
+hyml {
+    scroll-behavior: smooth;
+  }
 .aboutSection {
     height: 100vh;
     background: #394A60;
     display: flex;
     justify-content: center;
     align-items: center;
+
+    height: 100vh;
+    scroll-snap-align: start;
+    position: sticky;
+    top: 0;
+    left: 0;
 }
 
 .mainAboutCard{

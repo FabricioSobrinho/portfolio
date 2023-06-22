@@ -1,73 +1,5 @@
-/* Config geral navbar */
-nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  background: #3c526a;
-  display: flex;
-  align-items: center;
-  width: 100%;
-  z-index: 1;
-}
-
-/* Config Left navbar (texto) */
-nav .navText {
-  display: flex;
-  width: 50%;
-  padding: 1.5%;
-  padding-left: 3%;
-  transition: 0.5s;
-}
-nav .navText a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.6em;
-  font-weight: 600;
-}
-nav .navText p {
-  position: relative;
-}
-
-nav .navText p::after {
-  content: "";
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 3px;
-  background-image: linear-gradient(to right, #ffffff, #ffffff);
-  transition: width 0.5s ease;
-}
-nav .navText p:hover::after {
-  width: 100%;
-}
-/* Config right nav(nav menu) */
-nav .navMenu {
-  display: flex;
-  width: 50%;
-  justify-content: flex-end;
-  padding-right: 3%;
-}
-nav .navMenu li {
-  display: inline-block;
-  margin: 2px;
-  cursor: pointer;
-}
-nav .navMenu li a {
-  text-decoration: none;
-  margin: 2px;
-  padding: 10px;
-  color: #ffffff;
-  transition: 0.5s;
-  border-radius: 1px;
-  font-size: 1.17em;
-}
-nav .navMenu a:hover {
-  background: #e7eef6;
-  color: #3c526a;
-  transition: 0.5s;
-  box-shadow: -5px 5px 1px black;
-  transform: scale(1.05);
+hyml {
+  scroll-behavior: smooth;
 }
 /* Main div */
 .main {
@@ -77,7 +9,15 @@ nav .navMenu a:hover {
   background-color: #364156;
   height: 100vh;
   width: 100vw;
+
+  height: 100vh;
+  scroll-snap-align: start;
+  position: sticky;
+  top: 0;
+  left: 0;
 }
+/* Config geral navbar */
+
 .main .glassCard {
   display: flex;
   position: relative;
@@ -159,26 +99,40 @@ nav .navMenu a:hover {
 .rightContent p:hover::after {
   border-color: white;
 }
+@keyframes pulseLetter {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.rightContent p span {
+  opacity: 0;
+  animation-name: pulseLetter;
+  animation-duration: .7s;
+  animation-iteration-count: infinite;
+}
 .rightContent .formButtonProject {
-    display: flex;
-    justify-content: center;
-    margin: 10px;
+  display: flex;
+  justify-content: center;
+  margin: 10px;
 }
 .formButtonProject button {
-    cursor: pointer;
-    color: #e7eef6;
-    padding: 3px;
-    background: #3C6896;
-    border: none;
-    outline: none;
-    height: 10vh;
-    width: 100%;
-    transition: .5s;
+  cursor: pointer;
+  color: #e7eef6;
+  padding: 3px;
+  background: #3c6896;
+  border: none;
+  outline: none;
+  height: 10vh;
+  width: 100%;
+  transition: 0.5s;
 }
 .formButtonProject button:hover {
-    background: #e7eef6;
-    color: #394A60;
-    box-shadow: -8px 8px 1px black;
-    transform: scale(1.1);
-    transition: .5s;
+  background: #e7eef6;
+  color: #394a60;
+  box-shadow: -8px 8px 1px black;
+  transform: scale(1.1);
+  transition: 0.5s;
 }
