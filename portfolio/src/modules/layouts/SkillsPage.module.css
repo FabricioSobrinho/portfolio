@@ -1,3 +1,4 @@
+/* Main skill block */
 .skillMain {
     height: 100vh;
     background: #39699E;
@@ -13,7 +14,7 @@
     justify-content: center;
     align-items: center;
 }
-
+/* container dos conteudos da pagina */
 .skillMain .container {
     display: flex;
     justify-content: center;
@@ -23,6 +24,7 @@
     height: 100%;
     width: 90%;
 }
+/* titulo */
 .text {
     position: absolute;
     margin-top: -20%;
@@ -30,6 +32,7 @@
     font-size: 2em;
     text-align: center;
 }
+/* estilização dos cards de habilidades */
 .skillMain .container .card{
     position: relative;
     top: 9%;

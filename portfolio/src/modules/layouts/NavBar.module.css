@@ -38,6 +38,7 @@ nav {
     height: 3px;
     background-image: linear-gradient(to right, #ffffff, #ffffff);
     transition: width 0.5s ease;
+    
   }
   nav .navText p:hover::after {
     width: 100%;

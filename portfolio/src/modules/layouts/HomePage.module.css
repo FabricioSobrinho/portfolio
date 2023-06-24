@@ -65,7 +65,7 @@ hyml {
     transform: translateY(0);
   }
 }
-/* Defini;áo do conteúdo da direita, paragrafo e texto */
+/* Definição do conteúdo da direita, paragrafo e texto */
 .main .glassCard .rightContent {
   display: flex;
   flex-direction: column;
