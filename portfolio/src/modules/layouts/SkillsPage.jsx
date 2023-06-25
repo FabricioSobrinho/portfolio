@@ -3,11 +3,11 @@ import styles from "./SkillsPage.module.css"
 import {DiRuby, DiHtml5, DiCss3, DiReact, DiNodejs, DiDatabase } from 'react-icons/di'
 import {SiRubyonrails, SiJavascript} from 'react-icons/si'
 
-
 function SkillsPage() {
+
   return (
     <div className={styles.skillMain} id="skillsSection">
-      <div className={styles.container}>
+      <div className={styles.container} id="skillsContainer">
         <div className={styles.text}>
           <p>Este é meu baralho de habilidades.</p>
         <p>Passe o mouse por cima para ler a descrição de uma habilidade!</p>

@@ -1,12 +1,11 @@
-// import {DiRuby} from 'react-icons/di'
-import React, { useEffect } from "react"
-import ScrollReveal from "scrollreveal"
-
 //Pages
 import NavBar from "./modules/layouts/NavBar"
 import HomePage from "./modules/layouts/HomePage"
 import AboutPage from "./modules/layouts/AboutPage"
 import SkillsPage from "./modules/layouts/SkillsPage"
+
+import React, { useEffect } from "react"
+import ScrollReveal from "scrollreveal"
 
 function App() {
   useEffect(() => {

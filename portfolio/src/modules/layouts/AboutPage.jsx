@@ -1,9 +1,11 @@
 import styles from "./AboutPage.module.css"
 import presentationImg from "../images/presentationabout.svg"
+
 function AboutPage() {
+
   return (
     <div id="aboutSection" className={styles.aboutSection}>
-      <div className={styles.mainAboutCard}>
+      <div className={styles.mainAboutCard} id="mainAbout">
         <div className={styles.leftAboutCard}>
           <h1>Quem sou eu?</h1>
           <img src={presentationImg} alt="Apresentation of me" />
