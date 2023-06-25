@@ -28,7 +28,7 @@ function ProjectsPage() {
                 {<SiHtml5/>}
                 {<SiCss3/>}
             </div>
-          <a href="#/">
+          <a href="https://github.com/FabricioSobrinho/LandingPage-2.0">
             <img src={landingPage} alt="web page icon" href="" />
             <p>Landing page API</p>
           </a>
