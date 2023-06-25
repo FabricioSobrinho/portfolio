@@ -3,6 +3,7 @@ import NavBar from "./modules/layouts/NavBar"
 import HomePage from "./modules/layouts/HomePage"
 import AboutPage from "./modules/layouts/AboutPage"
 import SkillsPage from "./modules/layouts/SkillsPage"
+import ProjectsPage from "./modules/layouts/ProjectsPage"
 
 import React, { useEffect } from "react"
 import ScrollReveal from "scrollreveal"
@@ -32,6 +33,9 @@ function App() {
         </div>
         <div className="page">
           <SkillsPage id="page3"/>
+        </div>
+        <div className="page">
+          <ProjectsPage/>
         </div>
       </div>
     </div>

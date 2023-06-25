@@ -1,7 +1,7 @@
 /* Main skill block */
 .skillMain {
     height: 100vh;
-    background: #39699E;
+    background: #1d3957;
 
     height: 100vh;
     scroll-snap-align: start;
@@ -20,7 +20,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #15487e;
+    background: #0e2b4b;
     height: 100%;
     width: 90%;
 }
@@ -61,7 +61,7 @@
 }
 
 .frontCard {
-    background: #629ddb;
+    background: #395d82;
     color: #cd0000;
     display: flex;
     justify-content: center;
