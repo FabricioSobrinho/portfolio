@@ -36,7 +36,7 @@ function HomePage() {
             {text} <span className={styles.especialLetter}>I</span><br/> Sou acadêmico no curso de ADS. Venha conhecer meu portifólio!
           </p>
           <div className={styles.formButtonProject}>
-            <button>Clique aqui para conferir meus projetos!</button>
+            <a href="#projectSection"><button>Clique aqui para conferir meus projetos!</button></a>
           </div>
         </div>
       </div>

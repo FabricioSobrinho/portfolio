@@ -12,5 +12,18 @@ body {
   display: flex;
   height: 100vh;
   overflow-x: hidden;
-  background: #3c526a ;
+  background: #3c526a;
+}
+/* Scroll bar styles */
+::-webkit-scrollbar {
+  width: 7px;
+  background-color: #162049;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #0f0394;
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: #1c1e98;
 }
