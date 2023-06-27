@@ -1,0 +1,45 @@
+footer {
+    display: flex;
+    height: 40vh;
+}
+
+footer .leftFooter{ 
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    height: 100%;
+    width: 50%;
+    color: aliceblue;
+}
+.leftFooter p {
+    margin: 1%;
+}
+.contact{
+    margin-bottom: 2%;
+    color: aliceblue;
+    font-size: 1.9em;
+}
+
+.leftFooter .icons a{
+    text-decoration: none;
+    margin: 1%;
+    color: aliceblue;
+    font-size: 2em;
+}
+
+.icons a .ig {
+    color: #d71452;
+}
+.icons a .li {
+    color: #0e0480;
+}
+.icons a .gh {
+    color: #ffffff;
+}
+
+.leftFooter .bottomText {
+    display: flex;
+    align-items: flex-end;
+    height: 100%;
+    color: white;
+}
