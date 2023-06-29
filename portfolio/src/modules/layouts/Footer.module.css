@@ -1,6 +1,7 @@
 footer {
     display: flex;
     height: 40vh;
+    background: #2b425c;
 }
 
 footer .leftFooter{ 

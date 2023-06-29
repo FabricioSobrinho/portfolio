@@ -7,7 +7,7 @@ function Footer() {
   return (
     <div>
       <footer>
-        <div className={styles.leftFooter}>
+        <div className={styles.leftFooter} id="contactSection">
           <p className={styles.contact}>Como entrar em contato comigo?</p>
           <p className={styles.subText}>fabriciomails3@gmail.com</p>
           <div className={styles.icons}>

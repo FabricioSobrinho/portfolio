@@ -4,7 +4,9 @@ import HomePage from "./modules/layouts/HomePage"
 import AboutPage from "./modules/layouts/AboutPage"
 import SkillsPage from "./modules/layouts/SkillsPage"
 import ProjectsPage from "./modules/layouts/ProjectsPage"
+import ApiPage from "./modules/layouts/ApiPage"
 import Footer from "./modules/layouts/Footer"
+
 
 import React, { useEffect } from "react"
 import ScrollReveal from "scrollreveal"
@@ -37,6 +39,9 @@ function App() {
         </div>
         <div className="page">
           <ProjectsPage/>
+        </div>
+        <div className="page">
+          <ApiPage/>
         </div>
         <div className="page">
           <Footer/>
