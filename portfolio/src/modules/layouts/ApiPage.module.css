@@ -1,57 +1,98 @@
 .mainApi {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background: #3E668E;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: #3e668e;
 }
-.mainApi .leftPage,.rigthPage {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 50%;
+.mainApi .leftPage,
+.rigthPage {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50%;
 }
 @keyframes cashAnimation {
-    0% {
-        transform: translateY(0px);
-    }
-    50% {
-        transform: translateY(-5px);
-    }
-    100% {
-        transform: translateY(0px);
-    }
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-5px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
 .leftPage img {
-    animation-name: cashAnimation;
-    animation-timing-function: ease;
-    animation-duration: 3s;
-    animation-iteration-count: infinite;
-    width: 60%;
+  animation-name: cashAnimation;
+  animation-timing-function: ease;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  width: 60%;
 }
-
-.rightPage .form{
+.rightPage{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    height: 60%;
+    width: 35%;
+    background: #0e3051;
+    border-radius: 10px;
+}
+.rightPage .form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
 
-.rightPage .form > input[type=number] {
-    height: 6vh;
-    width: 45%;
-    outline: none;
-    border: none;
-    background: transparent;
-    border-bottom: #132639 solid 2px;
+.rightPage .form > input[type="number"] {
+  height: 6vh;
+  width: 35%;
+  text-align: center;
+  outline: none;
+  border: none;
+  background: transparent;
+  border-bottom: #132639 solid 2px;
+  color: #f0f8ff;
+  margin: 2%;
+}
+.rightPage .form > input[type="number"]::placeholder {
+    text-align: center;
+  color: #d2d2d2;
+  font-weight: 300;
+}
+.form > input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+.rightPage .form p {
     color: #f0f8ff;
-}
-.rightPage .form > input[type=number]::placeholder {
-    color: #d2d2d2;
     font-weight: 300;
+    margin: 5%;
 }
-.form > input[type=number]::-webkit-inner-spin-button, input[type=number]::-webkit-outer-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
-    }
+.rightPage .form input[type="button"] {
+  height: 7vh;
+  width: 40%;
+  background: #132639;
+  color: #f0f8ff;
+  border: none;
+  outline: none;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+.rightPage .form input[type="button"]:hover {
+    background: #f0f8ff;
+    color: #132639;
+    transform: scale(1.05);
+    box-shadow: -4px 4px 0px black;
+    transition: .4s;
+}
+.rightPage .res {
+    color: #f0f8ff;
+    font-weight: 400;
+    margin: 5%;
+}

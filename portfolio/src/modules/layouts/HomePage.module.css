@@ -103,14 +103,17 @@ hyml {
   0% {
     opacity: 0;
   }
-  100% {
+  50% {
     opacity: 1;
+  }
+  100% {
+    opacity: 0;
   }
 }
 .rightContent p span {
   opacity: 0;
   animation-name: pulseLetter;
-  animation-duration: .7s;
+  animation-duration: 1s;
   animation-iteration-count: infinite;
 }
 .rightContent .formButtonProject {
