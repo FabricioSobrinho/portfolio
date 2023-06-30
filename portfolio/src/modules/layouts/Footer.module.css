@@ -1,6 +1,6 @@
 footer {
     display: flex;
-    height: 40vh;
+    height: 30vh;
     background: #2b425c;
 }
 
@@ -41,6 +41,6 @@ footer .leftFooter{
 .leftFooter .bottomText {
     display: flex;
     align-items: flex-end;
-    height: 100%;
+    height: 30%;
     color: white;
 }

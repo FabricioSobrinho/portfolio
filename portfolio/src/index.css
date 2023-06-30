@@ -7,12 +7,15 @@
   font-family: 'Roboto', sans-serif;
   scroll-behavior: smooth;
 }
-
+html {
+  font-size: 62.5%;
+}
 body {
   display: flex;
   height: 100vh;
   overflow-x: hidden;
   background: #3c526a;
+  font-size: 1.6rem;
 }
 /* Scroll bar styles */
 ::-webkit-scrollbar {
@@ -26,4 +29,20 @@ body {
 }
 ::-webkit-scrollbar-thumb:hover {
   background-color: #1c1e98;
+}
+
+@media (max-width: 1119px) {
+  body {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 769px) {
+  body {
+    font-size: 1rem;
+  }
+}
+@media (max-width: 426px) {
+  body {
+    font-size: .7rem;
+  }
 }

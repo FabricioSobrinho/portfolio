@@ -1,118 +1,146 @@
 /* Main skill block */
 .skillMain {
-    height: 100vh;
-    background: #1d3957;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
-    height: 100vh;
-    scroll-snap-align: start;
-    position: sticky;
-    top: 0;
-    left: 0;
+  height: 100vh;
+  background: #1d3957;
 
+  height: 100vh;
+  scroll-snap-align: start;
+  top: 0;
+  left: 0;
+}
+/* container dos conteudos da pagina */
+.skillMain .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #0e2b4b;
+  height: 100%;
+  width: 90%;
+}
+/* titulo */
+.text {
+  position: absolute;
+  margin-top: -25%;
+  color: #f0f8ff;
+  font-size: 1.8em;
+  text-align: center;
+}
+/* estilização dos cards de habilidades */
+.skillMain .container .card {
+  position: relative;
+  top: 9%;
+  height: 37%;
+  width: 12%;
+}
+.card:hover .flip {
+  transform: rotateY(180deg) scale(1.2);
+  z-index: 1;
+}
+.flip {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+.frontCard,
+.backCard {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0px 0px 10px black;
+  backface-visibility: hidden;
+}
+
+.frontCard {
+  background: #395d82;
+  color: #cd0000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 6em;
+  border: solid 7px #241a81;
+}
+
+.backCard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5%;
+  background: #1f4871;
+  transform: rotateY(180deg);
+  color: #f0f8ff;
+  font-weight: 300;
+  font-size: 1em;
+}
+
+.html {
+  color: #ff4500;
+}
+.css {
+  color: #3f3fff;
+}
+.js {
+  color: #ffff00;
+  font-size: 0.9em;
+}
+.node {
+  color: #0d980d;
+  font-size: 1.1em;
+}
+.react {
+  color: #00e1ff;
+}
+.dbs {
+  color: #ffffff;
+}
+.skillMain p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+  transition: width 0.5s ease;
+}
+.skillMain p:hover::after {
+  text-align: center;
+  width: 100%;
+  border-radius: 20px;
+}
+@media (max-width: 601px) {
+  .skillMain {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-/* container dos conteudos da pagina */
-.skillMain .container {
+  }
+  .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    background: #0e2b4b;
-    height: 100%;
-    width: 90%;
-}
-/* titulo */
-.text {
-    position: absolute;
-    margin-top: -20%;
-    color: #f0f8ff;
-    font-size: 2em;
-    text-align: center;
-}
-/* estilização dos cards de habilidades */
-.skillMain .container .card{
+    width: 100vw;
+  }
+  .container .text {
+    display: none;
+  }
+  .skillMain .container .card {
     position: relative;
-    top: 9%;
-    height: 37%;
-    width: 12%;
-}
-.card:hover .flip{
-    transform: rotateY(180deg)  scale(1.2);
-    z-index: 1;
-}
-.flip {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    cursor: pointer;
-    transform-style: preserve-3d;
-    transition: .5s;
-}
-.frontCard, .backCard{ 
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px black;
-    backface-visibility: hidden;
-}
-
-.frontCard {
-    background: #395d82;
-    color: #cd0000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 6em;
-    border: solid 7px #241a81;
-}
-
-.backCard{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 3%;
-    background: #1f4871;
-    transform: rotateY(180deg);
-    color: #f0f8ff;
-    font-weight: 300;
-}
-
-.html {
-    color: #ff4500;
-}
-.css {
-    color: #3f3fff;
-}
-.js {
-    color: #ffff00;
-    font-size: .9em;
-}
-.node{
-    color: #0d980d;
-    font-size: 1.3em;
-}
-.react {
-    color: #00e1ff;
-}
-.dbs {
-    color: #ffffff;
-}
- .skillMain p::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
+    margin: 1%;
+    height: 35%;
+    width: 22.5%;
+    top: 4%;
     left: 0;
-    width: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
-    transition: width 0.5s ease;
   }
-.skillMain p:hover::after {
-text-align: center;
-    width: 100%;
-    border-radius: 20px;
-  }
+}
