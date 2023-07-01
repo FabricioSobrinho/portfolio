@@ -34,6 +34,7 @@ body {
 @media (max-width: 1119px) {
   body {
     font-size: 1.3rem;
+    overflow-x: hidden;
   }
 }
 @media (max-width: 769px) {
@@ -41,8 +42,8 @@ body {
     font-size: 1rem;
   }
 }
-@media (max-width: 426px) {
+@media (max-width: 490px) {
   body {
-    font-size: .7rem;
+    font-size: .9rem;
   }
 }

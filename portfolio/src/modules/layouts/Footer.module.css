@@ -44,3 +44,18 @@ footer .leftFooter{
     height: 30%;
     color: white;
 }
+
+@media (max-width: 490px) {
+    footer .leftFooter {
+        width: 100%;
+    }
+    .subText {
+        font-size: 1.5em;
+    }
+    .bottomText {
+        font-size: 1.1em;
+    }
+    .leftFooter .icons a {
+        font-size: 3em;
+    }
+}

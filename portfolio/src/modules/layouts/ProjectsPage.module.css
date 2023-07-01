@@ -40,6 +40,7 @@
     border-radius: 2px;
 }
 .bottomPage .cardProject p {
+    text-align: center;
     color: aliceblue;
 }
 .cardProject:hover {
@@ -82,4 +83,25 @@
     position: absolute;
     color: white;
     font-size: 1.3em;
+}
+@media (max-width: 490px) {
+    .topPage p {
+        font-size: 1.4em;
+    }
+    .cardProject:hover {
+        transition: .2s;
+        background: #1a0654;
+        box-shadow: -2px 2px 0px black;
+        transform: scale(1.05);
+    }
+    .bottomPage .cardProject a img{
+        display: none;
+    }
+    .bottomPage .cardProject p {
+        font-size: 1.3em;
+    }
+    .icons {
+        margin-top: 5%;
+        font-size: 1.9em;
+    }
 }

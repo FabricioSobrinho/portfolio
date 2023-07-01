@@ -1,73 +1,121 @@
 nav {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: #3c526a;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #3c526a;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  z-index: 9999;
+  box-shadow: 0px 2px 40px -15px black;
+}
+nav .responsiveMenu {
+  display: none;
+}
+/* Config Left navbar (texto) */
+nav .navText {
+  display: flex;
+  width: 50%;
+  padding: 1.5%;
+  padding-left: 3%;
+  transition: 0.5s;
+}
+nav .navText a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em;
+  font-weight: 600;
+}
+
+nav .navText p {
+  position: relative;
+}
+
+nav .navText p::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-image: linear-gradient(to right, #ffffff, #ffffff);
+  transition: width 0.5s ease;
+}
+nav .navText p:hover::after {
+  width: 100%;
+}
+/* Config right nav(nav menu) */
+nav .navMenu {
+  display: flex;
+  width: 50%;
+  justify-content: flex-end;
+  padding-right: 3%;
+}
+nav .navMenu li {
+  display: inline-block;
+  margin: 2px;
+  cursor: pointer;
+}
+nav .navMenu li a {
+  text-decoration: none;
+  margin: 2px;
+  padding: 10px;
+  color: #ffffff;
+  transition: 0.5s;
+  border-radius: 1px;
+  font-size: 1.17em;
+}
+nav .navMenu a:hover {
+  background: #e7eef6;
+  color: #3c526a;
+  transition: 0.5s;
+  box-shadow: -5px 5px 1px black;
+  transform: scale(1.05);
+}
+
+@media (max-width: 550px) {
+  nav {
+    justify-content: space-around;
+    height: 10vh;
+  }
+  nav .navMenu {
+    display: none;
+  }
+  nav .responsiveMenu {
+    display: flex;
+    font-size: 2.3em;
+    color: #f0f8ff;
+  }
+  nav .responsiveMenu .layersMenu {
+    position: absolute;
     display: flex;
     align-items: center;
-    width: 100%;
-    z-index: 9999;
-    box-shadow: 0px 2px 40px -15px  black;
+    justify-content: center;
+    height: 30vh;
+    border-radius: 3px;
+    top: 10vh;
+    right: 9%;
   }
-  
-  /* Config Left navbar (texto) */
-  nav .navText {
+  nav .responsiveMenu .layersMenu li {
     display: flex;
-    width: 50%;
-    padding: 1.5%;
-    padding-left: 3%;
-    transition: 0.5s;
+    justify-content: center;
+    list-style: none;
+    background-color: #212a34;
+    border: solid 2px black;
+    box-shadow: 2px 2px 3px black;
+    border-collapse: separate;
+    width: 130%;
+    margin: 1%;
+    padding: 3%;
   }
-  nav .navText a {
+  nav .responsiveMenu .layersMenu li a {
     text-decoration: none;
-    color: white;
-    font-size: 1.6em;
-    font-weight: 600;
-  }
-
-  nav .navText p {
-    position: relative;
-  }
-  
-  nav .navText p::after {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0;
-    height: 3px;
-    background-image: linear-gradient(to right, #ffffff, #ffffff);
-    transition: width 0.5s ease;
-    
-  }
-  nav .navText p:hover::after {
+    color: #e7eef6;
+    font-size: 0.8em;
     width: 100%;
+    padding: 3%;
   }
-  /* Config right nav(nav menu) */
-  nav .navMenu {
-    display: flex;
-    width: 50%;
-    justify-content: flex-end;
-    padding-right: 3%;
+  nav .responsiveMenu .layersMenu li a:hover {
+    color: #5353a6;
   }
-  nav .navMenu li {
-    display: inline-block;
-    margin: 2px;
-    cursor: pointer;
-  }
-  nav .navMenu li a {
-    text-decoration: none;
-    margin: 2px;
-    padding: 10px;
-    color: #ffffff;
-    transition: 0.5s;
-    border-radius: 1px;
-    font-size: 1.17em;
-  }
-  nav .navMenu a:hover {
-    background: #e7eef6;
-    color: #3c526a;
-    transition: 0.5s;
-    box-shadow: -5px 5px 1px black;
-    transform: scale(1.05);
-  }
+}

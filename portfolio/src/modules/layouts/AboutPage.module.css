@@ -66,3 +66,16 @@
   font-size: 1.2em;
   font-weight: 300;
 }
+@media (max-width: 490px) {
+  .mainAboutCard .leftAboutCard {
+    display: none;
+  }
+  .mainAboutCard .rightAboutCard {
+    height: 100%;
+    width: 100%;
+  }
+  .mainAboutCard .rightAboutCard p {
+    max-width: 100%;
+    font-size: 1.8em;
+  }
+}
