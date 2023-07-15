@@ -1,4 +1,4 @@
-<img src="../portfolio/src/modules/images/my-portfolio.png">
+<img src="./portfolio//src//modules/images/my-portfolio.png">
 
 <!-- Pensando o projeto -->
 ## O Projeto do meu portfólio pessoal foi feito em React JS 
