@@ -10,9 +10,7 @@
 ## Após isso comecei a montar meu ambiente, criando um repositório git para o projeto e criando o projeto com o comando: `NPX create-react-app` *Com isso meu ambiente de desenvolvimento react foi criado*
 
 
-
 # Depois de apagar arquivos desnecessarios e organizar as pastas no react instalei as dependências necessárias para meu projeto: `React Icons` & `Scroll Reveal`
-
 
 
 <!-- Começando a codar de fato -->
@@ -38,7 +36,6 @@ cada um desses modulos esta contido dentro de uma div com uma classe para que eu
 ## Cada modulo tem seu proprio estilo, o arquivo de estilo de um modulo tem o mesmo nome de seu arquivo .jsx, contendo a sub extensao *'.module.'*
 
 ## Cada um dos modulos tem seus elementos, trabalhei separadamente com cada um, cada um com sua estilização própria dentro da pasta: `Layouts`
-
 
 
 ## E após finalizar todos os modulos e organiza-los no arquivo "App.jsx" o projeto está pronto para ser upado para o GitHub. 
