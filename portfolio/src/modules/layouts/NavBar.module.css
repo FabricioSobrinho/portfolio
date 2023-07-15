@@ -91,28 +91,26 @@ nav .navMenu a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 30vh;
+    height: 45vh;
+    width: 100vw;
     border-radius: 3px;
     top: 10vh;
-    right: 9%;
+    left: 0;
+    background: #212a34;
   }
   nav .responsiveMenu .layersMenu li {
     display: flex;
     justify-content: center;
     list-style: none;
-    background-color: #212a34;
     border: solid 2px black;
-    box-shadow: 2px 2px 3px black;
     border-collapse: separate;
-    width: 130%;
-    margin: 1%;
-    padding: 3%;
+    width: 70vw;
+    margin: 2px 0;
   }
   nav .responsiveMenu .layersMenu li a {
     text-decoration: none;
     color: #e7eef6;
     font-size: 0.8em;
-    width: 100%;
     padding: 3%;
   }
   nav .responsiveMenu .layersMenu li a:hover {

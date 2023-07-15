@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+<img src="../portfolio/src/modules/images/my-portfolio.png">
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+<!-- Pensando o projeto -->
+## O Projeto do meu portfólio pessoal foi feito em React JS 
 
-## Available Scripts
+# A primeira fase do projeto foi o desing, escolher qual template eu usaria e como organizar a página, para isso usei o `Figma`
 
-In the project directory, you can run:
 
-### `npm start`
+<!-- Estruturando o ambiente -->
+## Após isso comecei a montar meu ambiente, criando um repositório git para o projeto e criando o projeto com o comando: `NPX create-react-app` *Com isso meu ambiente de desenvolvimento react foi criado*
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+# Depois de apagar arquivos desnecessarios e organizar as pastas no react instalei as dependências necessárias para meu projeto: `React Icons` & `Scroll Reveal`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+<!-- Começando a codar de fato -->
+--Primeiro eu resetei as configs de estilo globais do React (arquivo app.css), agora sim, sigamos:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## O react funciona com modulos, assim, minha aplicação tem 6 modulos principais:
+`Barra de navegação` - *NavBar*
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+`Página inicial main` - *HomePage*
 
-### `npm run eject`
+`Página de apresentação` - *AboutPage*
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+`Página de habilidades` - *SkillsPage*
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+`Página de projetos` - *ProjectPage*
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+`Requisição de uma api` - *ApiRequestPage*
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+`Rodapé` - *Footer*
 
-## Learn More
+cada um desses modulos esta contido dentro de uma div com uma classe para que eu possa usar o "Scroll Reveal" e ter uma aparição gradual do conteudo
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Cada modulo tem seu proprio estilo, o arquivo de estilo de um modulo tem o mesmo nome de seu arquivo .jsx, contendo a sub extensao *'.module.'*
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Cada um dos modulos tem seus elementos, trabalhei separadamente com cada um, cada um com sua estilização própria dentro da pasta: `Layouts`
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
+## E após finalizar todos os modulos e organiza-los no arquivo "App.jsx" o projeto está pronto para ser upado para o GitHub. 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+//*Eu trabalho com os arquivos usando a extensao '.jsx' para o auto-complete do VsCode operar no HTML dentro dos arquivos JS.*//

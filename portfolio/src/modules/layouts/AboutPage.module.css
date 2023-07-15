@@ -1,16 +1,10 @@
 /* estilo principal da pagina main */
 .aboutSection {
-  height: 100vh;
-  background: #394a60;
   display: flex;
   justify-content: center;
   align-items: center;
-
   height: 100vh;
-  scroll-snap-align: start;
-  position: sticky;
-  top: 0;
-  left: 0;
+  background: #394a60;
 }
 
 .mainAboutCard {
@@ -25,6 +19,7 @@
   justify-content: center;
   align-items: center;
   width: 50%;
+  margin-top: 5%;
 }
 .mainAboutCard .leftAboutCard h1 {
   color: #e7eef6;
@@ -55,8 +50,9 @@
 .mainAboutCard .rightAboutCard {
   display: flex;
   align-items: center;
+  width: 50%; 
   padding: 2%;
-  width: 50%;
+  margin-top: 5%;
 }
 .mainAboutCard .rightAboutCard p {
   color: #e7eef6;

@@ -44,6 +44,8 @@
 }
 .flip {
   position: absolute;
+  align-items: center;
+  display: flex;
   height: 100%;
   width: 100%;
   cursor: pointer;
@@ -62,7 +64,6 @@
 
 .frontCard {
   background: #395d82;
-  color: #cd0000;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -74,14 +75,20 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  height: 45vh;
   padding: 5%;
   background: #1f4871;
   transform: rotateY(180deg);
   color: #f0f8ff;
   font-weight: 300;
-  font-size: 1em;
+  font-size: 1.1em;
 }
-
+.ruby {
+  color: #ff0000;
+}
+.rails {
+  color: #ff0000;
+}
 .html {
   color: #ff4500;
 }
@@ -145,7 +152,8 @@
 }
 @media (max-width: 490px) {
   .backCard{
-    font-size: 1.2em;
+    font-size: 1.3em;
+    height: 30vh;
   }
   .skillMain .container .card{
     margin: 1%;
