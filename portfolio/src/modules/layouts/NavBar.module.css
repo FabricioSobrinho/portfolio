@@ -12,6 +12,9 @@ nav {
 nav .responsiveMenu {
   display: none;
 }
+nav .responsiveMenu .layersMenu {
+  display: none;
+}
 /* Config Left navbar (texto) */
 nav .navText {
   display: flex;
@@ -74,6 +77,22 @@ nav .navMenu a:hover {
 }
 
 @media (max-width: 550px) {
+  @keyframes menuAnimation {
+    from {
+      top: -30vh;
+    }
+    to {
+      top: 10vh;
+    }
+  }
+  @keyframes menuCoverAnimation {
+    from {
+      top: 10vh;
+    }
+    to {
+      top: -30vh;
+    }
+  }
   nav {
     justify-content: space-around;
     height: 10vh;
@@ -81,6 +100,7 @@ nav .navMenu a:hover {
   nav .navMenu {
     display: none;
   }
+
   nav .responsiveMenu {
     display: flex;
     font-size: 2.3em;
@@ -93,21 +113,32 @@ nav .navMenu a:hover {
     justify-content: center;
     height: 45vh;
     width: 100vw;
-    border-radius: 3px;
     top: 10vh;
     left: 0;
     background: #212a34;
+    border-radius: 3px;
+    transition: 0.5s;
+    animation: menuAnimation 0.5s forwards;
+    overflow-x: 2s;
+  }
+  .layersMenu ul {
+    width: 99vw;
   }
   nav .responsiveMenu .layersMenu li {
     display: flex;
     justify-content: center;
     list-style: none;
-    border: solid 2px black;
+    border-top: solid 2px black;
+    border-bottom: solid 1.5px black;
     border-collapse: separate;
-    width: 70vw;
+    width: 100%;
     margin: 2px 0;
+    
   }
   nav .responsiveMenu .layersMenu li a {
+    display: flex;
+    justify-content: center;
+    width: 100%;
     text-decoration: none;
     color: #e7eef6;
     font-size: 0.8em;

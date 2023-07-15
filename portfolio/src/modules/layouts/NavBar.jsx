@@ -4,24 +4,25 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { useRef, useEffect, useState } from "react"
 
 function NavBar() {
-  const [display, setDisplay] = useState(false); //State começa como falso = menu uculto
-  const responsivemenu = useRef(null); //Localiza o menu na dom
+  const [display, setDisplay] = useState(false) //State começa como falso = menu uculto
+  const responsiveMenu = useRef(null) //Localiza o menu na dom
 
   const activateMenu = () => {
     setDisplay(!display); //Muda o valor de display para alternar a visibilidade do Menu
+    responsiveMenu.current.classList.toggle = 'menuShowing'
   };
 
   useEffect(() => {
-    if (responsivemenu.current) { //Essa funcao determina se o menu esta ativado ou nao
-      const estilo = window.getComputedStyle(responsivemenu.current); 
+    if (responsiveMenu.current) { //Essa funcao determina se o menu esta ativado ou nao
+      const estilo = window.getComputedStyle(responsiveMenu.current);
       const displayValue = estilo.getPropertyValue("display");
       setDisplay(displayValue === "flex");
     }
   }, []);
 
   useEffect(() => {
-    if (responsivemenu.current) {
-      responsivemenu.current.style.display = display ? "flex" : "none"; //Esse operador é o responsável por mudar a visibiilidade do menu
+    if (responsiveMenu.current) {
+      responsiveMenu.current.style.display = display ? "flex" : "none"; //Esse operador é o responsável por mudar a visibiilidade do menu
     }
   }, [display]);
 
@@ -51,7 +52,7 @@ function NavBar() {
         </div>
         <div className={styles.responsiveMenu} onClick={activateMenu}>
           <GiHamburgerMenu />
-          <div className={styles.layersMenu} ref={responsivemenu}>
+          <div className={styles.layersMenu} ref={responsiveMenu}>
             <ul>
               <li>
                 <a href="#aboutSection">Sobre</a>

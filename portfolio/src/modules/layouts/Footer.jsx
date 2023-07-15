@@ -8,8 +8,7 @@ function Footer() {
     <div>
       <footer>
         <div className={styles.leftFooter} id="contactSection">
-          <p className={styles.contact}>Como entrar em contato comigo?</p>
-          <p className={styles.subText}>fabriciomails3@gmail.com</p>
+          <p className={styles.contact}>Como entrar em contato comigo?</p> <br/>
           <div className={styles.icons}>
             <a href="https://www.instagram.com/fabricioosobrinho/">
               <FaInstagram className={styles.ig} />
