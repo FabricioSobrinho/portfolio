@@ -135,7 +135,9 @@ nav .navMenu a:hover {
     height: 7vh;
     width: 100%;
     margin: 2px 0;
-    
+  }
+  nav .responsiveMenu .layersMenu li:hover {
+    background: #1d2e41;
   }
   nav .responsiveMenu .layersMenu li a {
     display: flex;
