@@ -119,7 +119,7 @@ nav .navMenu a:hover {
     border-radius: 3px;
     transition: 0.5s;
     animation: menuAnimation 0.5s forwards;
-    overflow-x: 2s;
+    overflow-x: max-height 0.3s ease;
   }
   .layersMenu ul {
     width: 99vw;
