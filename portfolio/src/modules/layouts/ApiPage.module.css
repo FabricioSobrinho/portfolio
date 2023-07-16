@@ -4,6 +4,7 @@
   align-items: center;
   height: 100vh;
   background: #3e668e;
+  font-size: 1.3em;
 }
 .mainApi .leftPage,
 .rigthPage {

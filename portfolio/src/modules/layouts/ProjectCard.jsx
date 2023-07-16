@@ -10,6 +10,7 @@ function ProjectCard({
   showHtml,
   showCss,
   showRuby,
+  showRails,
   img,
   linkRepo,
 }) {
@@ -20,6 +21,7 @@ function ProjectCard({
         {showHtml && <SiHtml5 />}
         {showCss && <SiCss3 />}
         {showRuby && <DiRuby />}
+
       </div>
       <a href={linkRepo}>
         <img src={img} alt="web page icon" />

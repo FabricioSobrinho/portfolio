@@ -54,17 +54,13 @@ function ProjectsPage() {
         />
         <ProjectCard
           nameProject="Ruby Activities"
-          showJs
-          showHtml
-          showCss
+          showRuby
           img={rubyTasks}
           linkRepo="https://github.com/FabricioSobrinho/Ruby-Activities"
         />
         <ProjectCard
           nameProject="Bank acc manager"
-          showJs
-          showHtml
-          showCss
+          showRuby
           img={bankIco}
           linkRepo="https://github.com/FabricioSobrinho/AccControler"
         />
