@@ -111,7 +111,7 @@ nav .navMenu a:hover {
     display: none;
     align-items: center;
     justify-content: center;
-    height: 45vh;
+    height: 30vh;
     width: 100vw;
     top: 10vh;
     left: 0;
@@ -127,11 +127,12 @@ nav .navMenu a:hover {
   nav .responsiveMenu .layersMenu li {
     display: flex;
     justify-content: center;
+    align-items: center;
     list-style: none;
     border-top: solid 2px black;
     border-bottom: solid 1.5px black;
     border-collapse: separate;
-    height: 10.5vh;
+    height: 7vh;
     width: 100%;
     margin: 2px 0;
     
