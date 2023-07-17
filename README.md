@@ -1,5 +1,7 @@
 <img src="./portfolio//src//modules/images/my-portfolio.png">
 
+<a href="https://portfolio-it8s.vercel.app/"> `Click here to view project` </a>
+
 <!-- Pensando o projeto -->
 ## O Projeto do meu portfólio pessoal foi feito em React JS 
 
