@@ -20,8 +20,7 @@ function AboutPage() {
             No frontend atualmente estou trabalhando com React JS, além da dupla
             dinâmica: HTML e CSS! <br />
             Adoro estudar e descobrir novas tecnologias, sou fascinado por Ruby
-            e no momento é a linguagem a qual eu mais tenho dado atenção no
-            momento <br />
+            e no momento é a linguagem a qual eu mais tenho dado atenção.<br />
           </p>
         </div>
       </div>
