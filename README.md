@@ -18,7 +18,7 @@
 <!-- Começando a codar de fato -->
 --Primeiro eu resetei as configs de estilo globais do React (arquivo app.css), agora sim, sigamos:
 
-## O react funciona com modulos, assim, minha aplicação tem 6 modulos principais:
+## O react funciona com módulos, assim, minha aplicação tem 6 modulos principais:
 `Barra de navegação` - *NavBar*
 
 `Página inicial main` - *HomePage*
@@ -29,7 +29,7 @@
 
 `Página de projetos` - *ProjectPage*
 
-`Requisição de uma api` - *ApiRequestPage*
+`Requisição de uma api` - *ApiPage*
 
 `Rodapé` - *Footer*
 
@@ -37,10 +37,8 @@ cada um desses modulos esta contido dentro de uma div com uma classe para que eu
 
 ## Cada modulo tem seu proprio estilo, o arquivo de estilo de um modulo tem o mesmo nome de seu arquivo .jsx, contendo a sub extensao *'.module.'*
 
-## Cada um dos modulos tem seus elementos, trabalhei separadamente com cada um, cada um com sua estilização própria dentro da pasta: `Layouts`
+## Cada um dos módulos tem seus elementos, trabalhei separadamente com cada um, cada um com sua estilização própria dentro da pasta: `Layouts`
 
 
-## E após finalizar todos os modulos e organiza-los no arquivo "App.jsx" o projeto está pronto para ser upado para o GitHub. 
+## E após finalizar todos os módulos e organiza-los no arquivo "App.jsx" o projeto está pronto para ser upado no GitHub. 
 
-
-//*Eu trabalho com os arquivos usando a extensao '.jsx' para o auto-complete do VsCode operar no HTML dentro dos arquivos JS.*//
