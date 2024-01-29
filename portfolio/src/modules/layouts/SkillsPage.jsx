@@ -1,4 +1,4 @@
-import styles from "./SkillsPage.module.css"
+import styles from "./SkillsPage.module.css";
 
 import {
   DiRuby,
@@ -7,10 +7,11 @@ import {
   DiReact,
   DiNodejs,
   DiDatabase,
-} from "react-icons/di"
-import { SiRubyonrails, SiJavascript } from "react-icons/si"
+  DiPython,
+} from "react-icons/di";
+import { SiRubyonrails, SiJavascript, SiCsharp } from "react-icons/si";
 
-import SkillCard from "./SkillCard"
+import SkillCard from "./SkillCard";
 
 function SkillsPage() {
   return (
@@ -20,6 +21,7 @@ function SkillsPage() {
           <p>Este é meu baralho de habilidades.</p>
           <p>Passe o mouse por cima para ler a descrição de uma habilidade!</p>
         </div>
+
         <SkillCard
           icon={<DiRuby />}
           tech="ruby"
@@ -59,11 +61,21 @@ function SkillsPage() {
         <SkillCard
           icon={<DiDatabase />}
           tech="dbs"
-          text="Bancos de dados são úteis no back-end para tratar informações, eu tenho conhecimentos em MySQL e MongoDb."
+          text="Bancos de dados são úteis no back-end para tratar informações, eu tenho conhecimentos em MySQL, PostgreSQL e MongoDb."
+        />
+        <SkillCard
+          icon={<DiPython />}
+          tech="python"
+          text="Python é uma linguagem de alto nível amplamente usada em aplicações web, Machine Learning e IA."
+        />
+        <SkillCard
+          icon={<SiCsharp />}
+          tech="csharp"
+          text="C# é uma das linguagens mais portáveis e difundidas no mundo pela sua velocidade e ferramentas modernas."
         />
       </div>
     </div>
-  )
+  );
 }
 
-export default SkillsPage
+export default SkillsPage;

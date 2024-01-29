@@ -2,13 +2,11 @@
 .skillMain {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 
   height: 100vh;
   background: #1d3957;
 
-  height: 100vh;
   scroll-snap-align: start;
   top: 0;
   left: 0;
@@ -26,7 +24,7 @@
 /* titulo */
 .text {
   position: absolute;
-  margin-top: -25%;
+  margin-bottom: 0%;
   color: #f0f8ff;
   font-size: 1.8em;
   text-align: center;
@@ -34,8 +32,7 @@
 /* estilização dos cards de habilidades */
 .skillMain .container .card {
   position: relative;
-  top: 9%;
-  height: 37%;
+  height: 30%;
   width: 12%;
 }
 .card:hover .flip {
@@ -109,6 +106,12 @@
 .dbs {
   color: #ffffff;
 }
+.python {
+  color: #ffffff;
+}
+.csharp {
+  color: #5F39D9;
+}
 .skillMain p::after {
   content: "";
   position: absolute;
@@ -144,20 +147,25 @@
   }
   .skillMain .container .card {
     margin: 1%;
-    height: 35%;
-    width: 22.5%;
+    height: 25%;
+    width: 20.5%;
     top: 4%;
     left: 0;
   }
 }
 @media (max-width: 490px) {
+  .skillMain {
+    height: 200vh;
+  }
   .backCard{
     font-size: 1.3em;
     height: 30vh;
   }
   .skillMain .container .card{
+    align-items: center;
+    justify-content: center;
     margin: 1%;
-    height: 20%;
+    height: 17%;
     width: 35%;
     left: 0;
     top: 0;
