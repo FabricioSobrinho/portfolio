@@ -2,14 +2,11 @@ import styles from "./ProjectsPage.module.css"
 
 import MFLogo from "../images/MFLogo.svg"
 
-//js and html imports
 import landingPage from "../images/landingPage.svg"
-import mentalist from "../images/mentalist.svg"
 import calculator from "../images/jscalc.svg"
 import costs from "../images/costs_logo.svg"
-
-//ruby projects imports
-import bankIco from "../images/bankicon.svg"
+import projectsManager from "../images/managerProjects.svg"
+import chessGame from "../images/chessGame.svg"
 
 import ProjectCard from "./ProjectCard"
 
@@ -35,16 +32,15 @@ function ProjectsPage() {
             showJs
             showHtml
             showCss
+            showReact
             img={costs}
             linkRepo="https://github.com/FabricioSobrinho/costs"
           />
         <ProjectCard
-          nameProject="Guess Game"
-          showJs
-          showHtml
-          showCss
-          img={mentalist}
-          linkRepo="https://github.com/FabricioSobrinho/mentalist"
+          nameProject="Chess Game"
+          showCsharp
+          img={chessGame}
+          linkRepo="https://github.com/FabricioSobrinho/Chess-Game"
         />
         <ProjectCard
           nameProject="Landing Page"
@@ -63,10 +59,11 @@ function ProjectsPage() {
           linkRepo="https://github.com/FabricioSobrinho/JS-calc"
         />
         <ProjectCard
-          nameProject="Bank acc manager"
-          showRuby
-          img={bankIco}
-          linkRepo="https://github.com/FabricioSobrinho/AccControler"
+          nameProject="Manager Projects"
+          showPy
+          showFlask
+          img={projectsManager}
+          linkRepo="https://github.com/FabricioSobrinho/project-manager-api"
         />
       </div>
     </div>

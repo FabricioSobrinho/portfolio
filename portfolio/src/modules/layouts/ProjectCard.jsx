@@ -7,6 +7,9 @@ import {
   SiCss3,
   SiReact,
   SiRubyonrails,
+  SiCsharp,
+  SiPython,
+  SiFlask
 } from "react-icons/si";
 import { DiRuby } from "react-icons/di";
 
@@ -18,6 +21,9 @@ function ProjectCard({
   showRuby,
   showReact,
   showRails,
+  showPy,
+  showCsharp,
+  showFlask,
   img,
   linkRepo,
 }) {
@@ -30,6 +36,9 @@ function ProjectCard({
         {showRuby && <DiRuby />}
         {showReact && <SiReact />}
         {showRails && <SiRubyonrails />}
+        { showCsharp && <SiCsharp />}
+        {showPy && <SiPython />}
+        {showFlask && <SiFlask />}
       </div>
       <a href={linkRepo}>
         <img src={img} alt="web page icon" />
